@@ -1,2 +1,2 @@
-def greet(name="world"):
-    print(f"Hello, {name}!")
+def greet(name="World"):
+    print(f"Welcome to our app, {name}!")
