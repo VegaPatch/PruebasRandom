@@ -1,5 +1,5 @@
-import re
 from greetings import greet  
+from validate import *
 
 def main():
     while True:
@@ -15,13 +15,6 @@ def main():
             break
         else:
             print("Invalid characters in your username")
-
-def validate(name):
-    valid_characters = r'^[a-zA-Z]+$'
-    if re.match(valid_characters, name):
-        return True
-    else:
-        return False
 
 if __name__ == "__main__":
     main()
