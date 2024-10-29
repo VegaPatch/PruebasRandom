@@ -1,5 +1,8 @@
 from greetings import greet  
+from farewell import goodbye
 from validate import *
+
+print("Welcome user, please let me know your name to continue")
 
 def main():
     while True:
@@ -12,6 +15,7 @@ def main():
             continue
         if validate(user_name):
             greet(user_name)
+            goodbye(user_name)
             break
         else:
             print("Invalid characters in your username")
